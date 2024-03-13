@@ -7,10 +7,10 @@ from selenium.common.exceptions import NoSuchElementException
 import time
 
 # Настройки прокси
-proxy_host = 'gproxy.site'
-proxy_port = '13722'
-proxy_username = 'TAG3ac'
-proxy_password = 'cafvEvugNeW2'
+proxy_host = ''
+proxy_port = ''
+proxy_username = ''
+proxy_password = ''
 
 proxy_options = {
     'proxy': {
@@ -33,8 +33,8 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 # Создаем драйвер с прокси и опциями
 driver = webdriver.Chrome(options=chrome_options, seleniumwire_options=proxy_options)
 # Данные для входа
-login = '79264489772'
-password = 'qRs5#12pp'
+login = ''
+password = ''
 
 driver.get('https://www.avito.ru/profile/login')
 
